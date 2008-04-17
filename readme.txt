@@ -1,6 +1,6 @@
 ﻿=== WP-Forum Latest Posts ===
 Contributors: Alphawolf
-Donate link: http://www.schloebe.de/
+Donate link: http://www.schloebe.de/donate/
 Tags: WP-Forum, forum, latest, posts, list
 Requires at least: 2.1
 Tested up to: 2.5
