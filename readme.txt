@@ -21,6 +21,10 @@ None.
 == Installation ==
 
 1. Download the plugin and unzip it.
-2. Upload the folder wp-forum-latest-posts/ to your /wp-content/plugins/ folder.
-3. Activate the plugin from your Wordpress admin panel.
-4. Installation finished.
+1. Upload the folder wp-forum-latest-posts/ to your /wp-content/plugins/ folder.
+1. Activate the plugin from your Wordpress admin panel.
+1. Installation finished.
+
+== Screenshots ==
+
+1. None
