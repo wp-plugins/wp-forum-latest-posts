@@ -1,4 +1,4 @@
-﻿=== WP-Forum Latest Posts ===
+=== WP-Forum Latest Posts ===
 Contributors: Alphawolf
 Donate link: http://www.schloebe.de/donate/
 Tags: WP-Forum, forum, latest, posts, list
@@ -24,7 +24,3 @@ None.
 1. Upload the folder wp-forum-latest-posts/ to your /wp-content/plugins/ folder.
 1. Activate the plugin from your Wordpress admin panel.
 1. Installation finished.
-
-== Screenshots ==
-
-1. None
