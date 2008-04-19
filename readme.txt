@@ -12,7 +12,7 @@ WP-Forum Latest Posts surprisingly lists the latest posts from your WP-Forum. Th
 
 WP-Forum Latest Posts surprisingly lists the latest posts from your WP-Forum. There are some option to customize the output and others.
 
-[See plugin homepage for more details](http://www.schloebe.de/wordpress/wp-forum-latest-posts-plugin/#english "See plugin homepage for more details")
+[See plugin homepage for more details](http://www.schloebe.de/wordpress/wp-forum-latest-posts-plugin/ "See plugin homepage for more details")
 
 == Frequently Asked Questions ==
 
