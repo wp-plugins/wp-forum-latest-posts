@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: WP-Forum Latest Posts
-Version: 0.5
+Version: 0.5.1
 Plugin URI: http://www.schloebe.de/wordpress/wp-forum-latest-posts-plugin/
 Description: Lists the latest posts from your WP-Forum.
 Author: Oliver Schl&ouml;be
 Author URI: http://www.schloebe.de/
 */
 
-define("WPFLP_VERSION", "0.5");
+define("WPFLP_VERSION", "0.5.1");
 
 function WPFLatestPosts($args = '') {
     global $wpdb, $PHP_SELF, $wp_version;
@@ -22,16 +22,16 @@ function WPFLatestPosts($args = '') {
 
     $blogurl = get_bloginfo('url');
     
-    $latestposts = $wpdb->get_results("SELECT * FROM wp_forum_posts ORDER BY date DESC LIMIT ".$r['number']."");
+    $latestposts = $wpdb->get_results("SELECT * FROM $wpdb->wp_forum_posts ORDER BY date DESC LIMIT ".$r['number']."");
     
-    if( $r['title'] ) {
+    if( $r['title'] )
     	$ausgabe .= $r['title'];
-    }
+	
     $ausgabe .= "<ul>\n";
     foreach ($latestposts as $posts) {
-    	$getforum = $wpdb->get_row("SELECT forum_id FROM wp_forum_threads WHERE id = ".$posts->thread_id."", OBJECT, 0);
-    	$getlinktopost = "?page_id=".$r['forumid']."&forumaction=showposts&forum=".$getforum->forum_id."&thread=".$posts->thread_id."&start=0&forumpost=".$posts->id;
-    	$ausgabe .= '<li><a href="'.$blogurl.$getlinktopost.'">'.$posts->subject.'</a></li>';
+    	$getforum = $wpdb->get_row("SELECT forum_id FROM $wpdb->wp_forum_threads WHERE id = " . $posts->thread_id . "", OBJECT, 0);
+    	$getlinktopost = "?page_id=" . $r['forumid'] . "&amp;forumaction=showposts&amp;forum=" . $getforum->forum_id . "&amp;thread=" . $posts->thread_id . "&amp;start=0&amp;forumpost=" . $posts->id;
+    	$ausgabe .= '<li><a href="' . $blogurl . $getlinktopost . '">' . $posts->subject . '</a></li>' . "\n";
 	}
     $ausgabe .= "</ul>\n";
     
