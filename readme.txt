@@ -14,6 +14,8 @@ WP-Forum Latest Posts surprisingly lists the latest posts from your WP-Forum. Th
 
 [See plugin homepage for more details](http://www.schloebe.de/wordpress/wp-forum-latest-posts-plugin/)
 
+[Developer on Google+](https://plus.google.com/100776016153395792354 "Developer on Google+") | [Developer on Twitter](http://twitter.com/wpseek "Developer on Twitter")
+
 **Want update feeds, code documentation and more? Visit [extend.schloebe.de](http://extend.schloebe.de)**
 
 == Frequently Asked Questions ==
